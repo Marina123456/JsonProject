@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#gantt_all {
+    width: 100%;
+    height: 100%;
+	overflow-x: scroll;
+}
+.gantt_container {
+	font-family: Arial;
+    font-size: 13px;
+    position: relative;
+    white-space: nowrap;
+}
+.gantt_leftside {
+	top: 0;
+	left: 0;
+    width: 253px;
+	overflow-x: hidden;
+    display: inline-block;
+    vertical-align: top;
+	position: absolute;
+	z-index: 2;
+}
+.gantt_grid_data {
+	width: 100%;
+	background-color: white;
+}
+.gantt_grid_dataCh {
+	margin-left: 20px;
+	width: 100%;
+	background-color: white;
+}
+.gantt_cell_header {
+	width: 100%;
+	border-right: none;
+    color: #454545;
+	display: inline-block;
+    vertical-align: top;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 32px;
+	line-height: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+	text-align: center;
+	background-color: white;
+}
+.plus{
+    cursor: pointer;
+	margin-top: -32px;
+	position: absolute;
+    font-size: 13pt;
+    font-weight: bold;
+	-moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -user-select: none;
+}
+.gantt_cell_child {
+	width: 100%;
+	border-right: none;
+    color: #454545;
+	display: inline-block;
+    vertical-align: top;
+    border-left: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 33px;
+	line-height: 33px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+	text-align: center;
+}
+.gantt_row {
+    height: 35px;
+    line-height: 35px;
+}
+.gantt_cell {
+	width: 156px;
+	border-right: none;
+    color: #454545;
+	display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid #ebebeb;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.gantt_work {
+    display: inline-block;
+    vertical-align: top;
+	position: relative;
+	left: 253px;
+}
+.gantt_work_data {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -user-select: none;
+}
+.gantt_work_data[idparent] {
+    border-bottom: 1px solid #ebebeb;
+    height: 33px;
+}
+.gantt_date_data {
+    position: relative;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -user-select: none;
+}
+.gantt_work_row {
+    height: 34px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.gantt_date_row {
+	height: 35px;
+    box-sizing: border-box;
+    background-color: #fff;
+	margin-left: -15px;
+	margin-top: 3px;
+}
+.gantt_work_cell,.gantt_date_cell{
+	float: left;
+	display: inline-block;
+    height: 100%;
+	box-sizing: border-box;
+	-ms-touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.gantt_work_cell { border-left: 1px solid #ebebeb; }
+.gantt_work_real {
+    color: white;
+    width: 1260px;
+	top: 5px;
+    height: 24px;
+	line-height: 24px;
+    position: absolute;
+	overflow: hidden;
+}
